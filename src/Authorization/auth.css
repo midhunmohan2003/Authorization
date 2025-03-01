@@ -1,0 +1,125 @@
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.auth-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.link-text {
+  text-decoration: none;
+  color: #70599f;
+}
+
+.form-control-custom {
+  background-color: #3c364c;
+  width: 250px;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.terms-link {
+  color: #70599f;
+}
+
+.separator hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid rgb(255, 255, 255);
+  margin: 0;
+}
+
+.separator p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.image {
+  border-radius: 20px;
+}
+
+.btn {
+  background-color: #6d54b5;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: left 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #5a4298;
+  color: #f8f8f8;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+@media screen and (max-width: 440px) {
+  .image {
+    width: 100%;
+    height: 300px;
+  }
+  .para {
+    font-size: 12px;
+  }
+
+  .text-overlay,
+  .bottom-text {
+    font-size: 10px;
+  }
+}
