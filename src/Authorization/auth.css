@@ -80,15 +80,18 @@
   border-radius: 20px;
 }
 
-.btn {
+.btn-ok {
   background-color: #6d54b5;
   color: white;
   position: relative;
   overflow: hidden;
   transition: color 0.4s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 3px;
+  height: 30px;
+  border: none;
 }
 
-.btn::before {
+.btn-ok::before {
   content: "";
   position: absolute;
   top: 0;
@@ -100,12 +103,12 @@
   transition: left 0.4s ease-in-out;
 }
 
-.btn:hover {
+.btn-ok:hover {
   background-color: #5a4298;
   color: #f8f8f8;
 }
 
-.btn:hover::before {
+.btn-ok:hover::before {
   left: 100%;
 }
 

@@ -8,4 +8,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 <!-- adding image from assets -->
-![Project Screenshot](./src/assets/screenshot.png)
+![Project Screenshot](./src/assets/screenshot1.png)
+![Project Screenshot](./src/assets/screenshot2.png)
+![Project Screenshot](./src/assets/screenshot3.png)
+![Project Screenshot](./src/assets/screenshot4.png)
+
+
+

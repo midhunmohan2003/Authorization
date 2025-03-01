@@ -107,7 +107,7 @@ function Auth({ register }) {
                   </div>
                   <br />
                   <button
-                    className="btn w-100"
+                    className="btn-ok w-100"
                     style={{ backgroundColor: "#6D54B5" }}
                   >
                     {isRegisterForm ? "Create Account" : "Login"}
@@ -126,7 +126,7 @@ function Auth({ register }) {
                   <br />
                   <Row className="justify-content-center">
                     <Col xs="auto">
-                      <Button variant="outline-light" className="btn-social">
+                      <Button variant="" className="btn-social border-white">
                         <img
                           src="https://cdn-icons-png.flaticon.com/128/281/281764.png"
                           alt="Google"
@@ -137,7 +137,7 @@ function Auth({ register }) {
                       </Button>
                     </Col>
                     <Col xs="auto">
-                      <Button variant="outline-light" className="btn-social">
+                      <Button variant="" className="btn-social border-white">
                         <img
                           src="https://cdn-icons-png.flaticon.com/128/731/731985.png"
                           alt="Apple"
